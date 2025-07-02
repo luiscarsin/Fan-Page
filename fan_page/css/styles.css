@@ -1,0 +1,239 @@
+/*CONFIGURACIÓN GENERAL*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*ESTILO DEL BODY*/
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fdf6f0;
+  color: #222;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/*ENCABEZADO*/
+header {
+  background-color: #3b3b3b;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 4px solid #f4a261;
+  border-radius: 10px;
+}
+
+header h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+/*MENÚ DE NAVEGACIÓN*/
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  padding: 10px 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #f4a261;
+  font-weight: bold;
+  padding: 8px 12px;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+nav a:hover {
+  background-color: #f4a261;
+  color: #3b3b3b;
+  border-color: #3b3b3b;
+}
+
+/*CONTENIDO PRINCIPAL*/
+main {
+  max-width: 900px;
+  margin: auto;
+  padding: 25px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+main p {
+  margin-bottom: 15px;
+  font-size: 1.1em;
+  text-align: justify;
+}
+
+main h2 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 1.5em;
+  border-left: 6px solid #f4a261;
+  padding-left: 10px;
+  color: #3b3b3b;
+}
+
+blockquote {
+  font-style: italic;
+  color: #555;
+  margin: 20px 0;
+  padding-left: 15px;
+  border-left: 4px solid #f4a261;
+}
+
+/*IMÁGENES*/
+img {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 2px solid #eee;
+}
+
+/*GALERÍA DE IMÁGENES*/
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.galeria img {
+  width: 280px;
+  height: auto;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.galeria img:hover {
+  transform: scale(1.03);
+}
+
+/*MULTIMEDIA*/
+video,
+iframe,
+audio {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+  border-radius: 8px;
+  border: 2px solid #f4a261;
+}
+
+/*FORMULARIO DE CONTACTO*/
+form {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  font-size: 1em;
+  background-color: #fafafa;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+button {
+  background-color: #3b3b3b;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1em;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #2a2a2a;
+}
+
+/*SEPARADORES*/
+hr {
+  margin: 30px 0;
+  border: none;
+  border-top: 2px solid #ccc;
+}
+
+/*ESTILOS PARA LA SECCIÓN DE CANALES OFICIALES*/
+#canales-oficiales {
+  background-color: #fef6e4; /* color cálido claro */
+  padding: 20px;
+  border-radius: 12px;
+  margin: 20px auto;
+  max-width: 600px;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Título de la sección */
+#canales-oficiales h2 {
+  text-align: center;
+  color: #8c2f39;
+  margin-bottom: 15px;
+}
+
+/* Lista de enlaces */
+#canales-oficiales ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Ítems individuales */
+#canales-oficiales li {
+  margin: 10px 0;
+}
+
+/* Estilo de los enlaces */
+#canales-oficiales a {
+  text-decoration: none;
+  color: #4a4e69;
+  background-color: #fcd5ce;
+  padding: 10px 15px;
+  border-radius: 8px;
+  display: inline-block;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+/* Efecto hover */
+#canales-oficiales a:hover {
+  background-color: #e5989b;
+  color: #fff;
+}
+
+/*PIE DE PÁGINA*/
+footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 0.9em;
+  color: #666;
+  padding-top: 20px;
+  border-top: 1px solid #ccc;
+}
